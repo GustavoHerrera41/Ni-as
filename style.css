@@ -166,7 +166,7 @@ h1, h2, .logo {
     height: 100%;
     object-fit: cover;
     display: block;
-    filter: blur(12px); /* Blurry by default */
+    filter: blur(6px); /* Less blur so it doesn't look empty */
     transition: filter 0.5s ease;
     
     /* Prevent image dragging and direct right-clicking */
@@ -353,7 +353,7 @@ footer strong {
         padding: 10px;
     }
     .image-card img {
-        filter: blur(10px); /* Slightly less blur on mobile so images are discernible */
+        filter: blur(4px); /* Very mild blur on mobile so images are discernible */
     }
     .modal-content {
         max-width: 100%;
