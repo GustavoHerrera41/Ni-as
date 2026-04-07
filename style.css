@@ -204,6 +204,15 @@ h1, h2, .logo {
     border-radius: var(--border-radius);
     box-shadow: 0 0 30px var(--primary-color);
     animation: fadeInPop 0.4s ease;
+    
+    /* Anti-save and anti-drag protections for PC and Mobile */
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    -webkit-touch-callout: none;
+    user-select: none;
+    pointer-events: none; /* Prevents long-press and right click */
 }
 
 .modal-nav {
