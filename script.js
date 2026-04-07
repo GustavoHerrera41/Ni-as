@@ -152,10 +152,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    window.addEventListener('blur', () => {
-        if (!isAdmin) document.body.style.opacity = '0';
-    });
-
     window.addEventListener('focus', () => {
         document.body.style.opacity = '1';
     });

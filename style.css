@@ -348,9 +348,17 @@ footer strong {
         gap: 1rem;
     }
     .gallery-grid {
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-        gap: 10px;
-        padding: 10px;
+        grid-template-columns: 1fr 1fr; /* Force exactly 2 columns for a better mobile gallery feel */
+        gap: 15px;
+        padding: 15px;
+    }
+    .image-card img {
+        filter: blur(10px); /* Slightly less blur on mobile so images are discernible */
+    }
+    .modal-content {
+        max-width: 100%;
+        max-height: 60vh; /* Leave room for buttons on small screens */
+        border-width: 3px;
     }
     .btn-transfer {
         font-size: 2.5rem;
