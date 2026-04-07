@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Perritos - Niñas</title>
+    <meta name="description" content="Una galería de perritos adorables con estilo cartoon.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="gallery-header">
+        <h1 class="animate-pop">¿Qué perrito quieres ver?</h1>
+        <p class="subtitle">👉 Haz clic en uno para verlo nítido 👈</p>
+    </header>
+
+    <main class="gallery-grid" id="galleryGrid">
+        <div class="image-card animate-pop" onclick="openLightbox(0)"><img src="images/img1.jpg" alt="Perrito 1"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(1)"><img src="images/img2.jpg" alt="Perrito 2"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(2)"><img src="images/img3.jpg" alt="Perrito 3"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(3)"><img src="images/img4.jpg" alt="Perrito 4"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(4)"><img src="images/img5.jpg" alt="Perrito 5"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(5)"><img src="images/img6.jpg" alt="Perrito 6"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(6)"><img src="images/img7.jpg" alt="Perrito 7"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(7)"><img src="images/img8.jpg" alt="Perrito 8"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(8)"><img src="images/img9.jpg" alt="Perrito 9"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(9)"><img src="images/img10.jpg" alt="Perrito 10"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(10)"><img src="images/img11.jpg" alt="Perrito 11"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(11)"><img src="images/img12.jpg" alt="Perrito 12"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(12)"><img src="images/img13.jpg" alt="Perrito 13"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(13)"><img src="images/img14.jpg" alt="Perrito 14"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(14)"><img src="images/img15.jpg" alt="Perrito 15"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(15)"><img src="images/img16.jpg" alt="Perrito 16"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(16)"><img src="images/img17.jpg" alt="Perrito 17"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(17)"><img src="images/img18.jpg" alt="Perrito 18"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(18)"><img src="images/img19.jpg" alt="Perrito 19"></div>
+        <div class="image-card animate-pop" onclick="openLightbox(19)"><img src="images/img20.jpg" alt="Perrito 20"></div>
+    </main>
+
+    <!-- Transfer Button Container -->
+    <div id="transfer-btn-container">
+        <button class="btn btn-transfer" onclick="revealPrank()">TRANSFERENCIA</button>
+    </div>
+
+    <!-- Warning Modal (Lilac & White) -->
+    <div id="warningModal" class="modal-warning">
+        <h2>¡ATENCIÓN!</h2>
+        <p>Termina de ver todas las fotos y te llegará una transferencia. 💰</p>
+        <button class="btn-lila-white" onclick="closeWarningModal()">¡ENTENDIDO!</button>
+    </div>
+
+    <!-- Exit Modal (Lilac & White) -->
+    <div id="exitModal" class="modal-warning">
+        <h2>¡OYE!</h2>
+        <p>Bah, pensé que te gustaban estos ángeles...</p>
+        <button class="btn-lila-white" onclick="closeExitModal()">CERRAR DE TODOS MODOS</button>
+        <button class="btn-lila-white" style="margin-left: 10px;" onclick="resumeGallery()">SEGUIR VIENDO</button>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="modal">
+        <div class="counter-text"><span id="currentView">0</span> / 20</div>
+        <img class="modal-content" id="lightboxImg">
+        <div class="modal-nav">
+            <button class="btn" onclick="closeLightbox()">Cerrar</button>
+            <button class="btn" id="nextBtn" onclick="nextImage()">Siguiente</button>
+        </div>
+    </div>
+
+    <!-- Final Prank Alert -->
+    <div id="prankAlert" class="prank-alert">
+        <h1 style="font-size: 3rem;">😜 ¡TE LA CREÍSTE WEEEEE!</h1>
+        <p style="font-size: 1.5rem; margin-top: 1rem;">Gracias por ver a mis niñas.</p>
+        <button class="btn" style="margin-top: 2rem;" onclick="backToStart()">Regresar</button>
+    </div>
+
+    <footer>
+        <p>Creado por <strong>Gustavo Raul Herrera</strong>, todos los derechos reservados</p>
+        <p>Información de contacto: <a href="mailto:gustavoherrera587@gmail.com" style="color: var(--primary-color);">gustavoherrera587@gmail.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
