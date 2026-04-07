@@ -348,21 +348,31 @@ footer strong {
         gap: 1rem;
     }
     .gallery-grid {
-        grid-template-columns: 1fr 1fr; /* Force exactly 2 columns for a better mobile gallery feel */
-        gap: 15px;
-        padding: 15px;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns per row as requested */
+        gap: 8px;
+        padding: 10px;
     }
     .image-card img {
         filter: blur(10px); /* Slightly less blur on mobile so images are discernible */
     }
     .modal-content {
         max-width: 100%;
-        max-height: 60vh; /* Leave room for buttons on small screens */
+        max-height: 50vh; /* More room for buttons */
         border-width: 3px;
+        min-height: 250px; /* So it doesn't collapse if image is loading */
+        object-fit: contain;
+    }
+    .modal-nav {
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .btn {
+        font-size: 1.2rem;
+        padding: 0.6rem 1.5rem;
     }
     .btn-transfer {
-        font-size: 2.5rem;
-        padding: 1.5rem 3rem;
+        font-size: 2.2rem;
+        padding: 1.2rem 2rem;
     }
     .modal-warning h2 {
         font-size: 2.5rem;
